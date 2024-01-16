@@ -1,0 +1,84 @@
+    /* font-family: 'Comfortaa', sans-serif; */
+    /* font-family: 'Permanent Marker', cursive; */
+    /* font-family: 'Architects Daughter', cursive; */
+    /* font-family: 'Indie Flower', cursive; */
+    /* font-family: 'Kalam', cursive; */
+    /* font-family: 'Macondo', cursive; */
+
+body {
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+}
+
+#instructionForPlayer {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 15px;
+}
+
+#score {
+    margin-bottom: 7px;
+    font-size : 12px;
+    font-family: 'Comfortaa', sans-serif;
+}
+
+#gameBoard {
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(3, 150px);
+    grid-gap: 7px;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 25px;
+}
+
+.bigGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 50px);
+    grid-template-rows: repeat(3, 50px);
+    background-color: #D7BDE2;
+    border: 1px solid #7F4796;
+}
+
+.winBigGrid {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: #D7BDE2;
+    border: 1px solid #7F4796;
+    font-size: 80px;
+}
+
+.littleGrid {
+    display: grid;
+    background-color: #D7BDE2;
+    border: 1px solid #7F4796;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    background-image: linear-gradient(to right, #BE93C5 0%, #7BC6CC 60%, #BE93C5 100%);
+    margin: 3px;
+    padding: 5px 5px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: black;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+    border-color: #7F4796;
+    font-family: 'Comfortaa', sans-serif;
+  }
+
+button:hover {
+    background-position: right center;
+    color: black;
+    text-decoration: none;
+  }
