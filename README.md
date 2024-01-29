@@ -12,5 +12,3 @@ Le premier joueur qui a gagné trois mini-grilles alignées (horizontalement, ve
 Ces règles sont complétées par les trois règles suivantes:
 - Si un joueur joue dans une case, le joueur suivant joue dans la mini-grille qui occupe la même place dans la grille que le coup joué. Ainsi dans l'exemple ci-dessous, si X joue dans la grille 4 comme indiquée, O devra jouer dans la grille 6.
 - Si un joueur envoie son adversaire dans une minigrille déjà gagnée, l'adversaire pourra jouer dans n'importe quelle case vide de la grille de jeu.
-
-![Cover](https://github.com/chloethoma/big_morpion/blob/main/images/Capture%20morpion.JPG)
