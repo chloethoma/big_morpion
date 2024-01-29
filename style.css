@@ -29,8 +29,8 @@ body {
 
 #gameBoard {
     display: grid;
-    grid-template-columns: repeat(3, 150px);
-    grid-template-rows: repeat(3, 150px);
+    grid-template-columns: repeat(3, 3fr);
+    grid-template-rows: repeat(3, 3fr);
     grid-gap: 7px;
     font-family: 'Architects Daughter', cursive;
     font-size: 25px;
@@ -85,8 +85,8 @@ button:hover {
 
 @media screen and (max-width: 900px) {    
     #gameBoard {
-        grid-template-columns: repeat(3, 7.5rem);
-        grid-template-rows: repeat(3, 7.5rem);
+        grid-template-columns: repeat(3, 3fr);
+        grid-template-rows: repeat(3, 3fr);
         grid-gap: 0.31rem;
     }
     
