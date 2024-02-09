@@ -1,5 +1,6 @@
 // A FAIRE :
 // Version 2 : refacto --> partir d'un seul objet, faire tout le gamePlay à partir de cet objet et implémenter dans HTML
+// Ajout instructions de jeu
 
 // Tableau principal gamePlay
 let gridValue = [
