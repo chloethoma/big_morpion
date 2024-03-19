@@ -43,6 +43,8 @@ let gameBoardlittleGrid = document.querySelectorAll(".littleGrid")
 const instructionForPlayer = document.getElementById("instructionForPlayer")
 const scorePlayerX = document.getElementById("scorePlayerX")
 const scorePlayerO = document.getElementById("scorePlayerO")
+const showInstructions = document.getElementById("showInstructions")
+const gameInstructions = document.getElementById("gameInstructions")
 
 // Tableau qui sert au gamePlay sur les 9 grandes grilles
 let bigGridValue = ["", "", "", "", "", "", "", "", ""]
@@ -70,6 +72,7 @@ const winIsValid = (array, player) => {
         (array[2] === player && array[5] === player && array[8] === player)
 }
 
+// Restart game : delete all grid and score
 const restartGame = () => {
     resetGrid()
     instructionForPlayer.textContent = `Player ${player} c'est à toi de jouer`
@@ -119,6 +122,11 @@ const scoreDisplay = (player) => {
     }
 }
 
+// Instructions de jeu
+const openModalForInstructions = () => {
+    gameInstructions.showModal()
+}
+
 const removeLittleGridAndDisplayLetter = (x, player) => {
     // Lorsque qu'un joueur gagne une grande grille, les petites grilles sont supprimées de la page HTML
     for (const littleGrid of gameBoardlittleGrid) {
@@ -132,7 +140,7 @@ const removeLittleGridAndDisplayLetter = (x, player) => {
     gameBoardBigGrid[x].className = "winBigGrid"
 }
 
-// Applique du CSS (shadow) sur la grille qui doit être jouée par le joueur suivant
+// Applique du CSS (color shadow) sur la grille qui doit être jouée par le joueur suivant
 const boxShadowForNextPlayer = (y) => {
     gameBoard.style.boxShadow = '';
     for (const grid of gameBoardBigGrid) {
@@ -192,6 +200,3 @@ const gamePlay = (event) => {
 for (let i = 0; i < gameBoardlittleGrid.length; i++) {
     gameBoardlittleGrid[i].addEventListener("click", gamePlay)
 }
-
-
-
