@@ -103,6 +103,10 @@ button:hover {
     border-radius: 5px;
   }
 
+img{
+    max-height: 300px;
+}
+
 @media screen and (max-width: 900px) {    
     #gameBoard {
         grid-template-columns: repeat(3, 3fr);
